@@ -1,0 +1,14 @@
+from itertools import count, accumulate, takewhile, product, permutations
+
+for i in count(3):
+    print(i)
+    if i >=11:
+        break
+
+nums = list(accumulate(range(8)))
+print(nums)
+print(list(takewhile(lambda x: x<=6, nums)))
+
+letters = ("A" , "B")
+print(len(list(product(letters, range(3)))))
+print(list(permutations(letters)))

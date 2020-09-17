@@ -1,0 +1,14 @@
+class Cat:
+    tails = 1
+    def __init__(self, color, legs):
+        self.color = color
+        self.legs = legs
+    def bark(self):
+        print("nya!" + self.color)
+felix = Cat("ginger", 4)
+rover = Cat("brown", 3)
+print(felix.color)
+print(rover.legs)
+felix.bark()
+print(felix.tails)
+print(Cat.tails)
